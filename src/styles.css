@@ -1,0 +1,35 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.active {
+  color: darkgreen;
+  font-weight: 600;
+}
+
+.clickable {
+  color: blue;
+  text-decoration: underline;
+}
+
+.clickable:hover {
+  font-weight: 600;
+}
+
+.month-year-picker {
+  display: flex;
+  flex-direction: column;
+}
+
+.months {
+  display: inline-flex;
+}
+
+.month {
+  padding-right: 10px;
+}
+
+.issue {
+  margin-top: 20px;
+}
