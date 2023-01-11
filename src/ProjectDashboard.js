@@ -97,7 +97,9 @@ const ProjectBudgetDashboard = ({ projectId }) => {
           <ul>
             {filterTimelogsByMonth(timeLogs, filteredMonth).map((timeLog) => (
               <li key={timeLog.id} className="issue">
-                <div>Issue: {timeLog.issue}</div>
+                <div>
+                  {timeLog.issue}: {timeLog.description}
+                </div>
                 <div>
                   Time Spent:{" "}
                   {Math.round(timeLog.time_spent_seconds / 36) / 100} hours
